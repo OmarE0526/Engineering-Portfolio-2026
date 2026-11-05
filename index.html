@@ -1,0 +1,91 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Omar Elarabi · Aerospace Engineering Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Omar Elarabi · Aerospace Engineering Portfolio">
+<meta property="og:description" content="BEng Aerospace Engineering (First Class Honours, QMUL 2026). Case studies in propulsion, CFD, FEA, composites, control and data-driven engineering.">
+<meta property="og:image" content="img/room/study.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Omar Elarabi, BEng Aerospace Engineering (First Class Honours, QMUL 2026). Case studies in propulsion, CFD, FEA, composites, control and data-driven engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head><body>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="Choose a discipline">
+  <div class="gbg"></div><div class="scan"></div>
+  <canvas id="gcode" aria-hidden="true"></canvas><div class="flood"></div>
+  <div class="coords tl">51.5246° N · 0.0400° W<br>QMUL · Mile End</div>
+  <div class="coords br" id="gstat">SYS · BOOT<br>v3.0 · 2026</div>
+  <div class="load" id="gload">
+    <div>
+      <svg class="hex" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15.5"/><path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z"/><text x="16" y="20" text-anchor="middle">OE</text></svg>
+      <div class="lbl">Aerospace Engineering Portfolio</div>
+      <div class="nm" id="gname" aria-label="Omar Elarabi"></div>
+      <div class="bar"><i id="gbar"></i></div>
+      <div class="pct"><span id="gtask">Initialising</span><span id="gpct">0%</span></div>
+    </div>
+  </div>
+  <div class="stage" id="gstage"></div>
+  <div class="pick" id="gpick"><p class="q">01 · Choose your pathway</p><h2 id="gh">Select your technical pathway.</h2><p class="sub">Each pathway sets the colour system, the model in the opening scene, the order of the case studies and the CV offered. Hover an object in my room to look inside, then click to enter. You can switch pathway at any time from the top bar.</p><div class="opts" id="gopts" role="radiogroup" aria-label="Technical pathways"></div>
+    <p class="foot" id="gfoot">Hover to preview · click an object or a pathway to enter</p>
+  </div>
+</div>
+
+<div class="curtain" id="curtain" aria-hidden="true"><canvas id="ccode"></canvas><div class="glitch"></div><div class="in">
+  <svg viewBox="0 0 32 32"><path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z"/><text x="16" y="20" text-anchor="middle">OE</text></svg>
+  <div class="t">Reconfiguring</div><div class="n" id="cname"></div><div class="bar"><i></i></div>
+</div></div>
+
+<header class="nav" id="nav">
+  <div class="wrap row">
+    <a class="logo" href="#top" data-jump="top" aria-label="Omar Elarabi, back to top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="16" y="21" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor" font-family="Montserrat, sans-serif">OE</text></svg>
+      <span><b>Omar Elarabi</b><small>Aerospace Eng.</small></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#about" data-jump="about">About</a>
+      <a href="#work" data-jump="work">Projects</a>
+      <a href="#experience" data-jump="experience">Experience</a>
+      <a href="#skills" data-jump="skills">Skills</a>
+      <a href="#contact" data-jump="contact">Contact</a>
+    </nav>
+    <div class="tools" style="position:relative">
+      <button class="disc-btn" id="disc-btn" type="button" aria-haspopup="true" aria-expanded="false"><i></i><span class="nm" id="disc-nm">Discipline</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="disc-menu" id="disc-menu" role="menu"><div class="h">Switch discipline</div><div id="disc-list"></div></div>
+      <button class="ibtn theme-btn" type="button" aria-label="Toggle light or dark mode"></button>
+      <a class="btn solid nav-cv" id="nav-cv" href="#" download style="padding:11px 16px">CV</a>
+    </div>
+  </div>
+</header>
+
+<nav class="srail" id="srail" aria-label="Page sections"></nav>
+
+<main id="main"></main>
+
+<div class="dossier" id="dossier" hidden role="dialog" aria-modal="true" aria-labelledby="d-title">
+  <div class="scrim"></div>
+  <div class="sheet">
+    <div class="d-head">
+      <div><div class="k" id="d-kicker"></div><div class="t" id="d-title"></div></div>
+      <button class="ibtn d-close" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="d-prog"><i id="d-prog"></i></div>
+    <div class="d-body"><nav class="d-nav" id="d-nav" aria-label="Sections"></nav><div class="d-scroll" id="d-scroll"></div></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<noscript><p style="padding:24px">This portfolio needs JavaScript. Contact: omarelarabi05@outlook.com</p></noscript>
+<script src="data.js"></script>
+<script src="gateroom.js"></script>
+<script src="app.js"></script>
+<script type="module" src="scene3d.mjs"></script>
+
+</body></html>
